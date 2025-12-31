@@ -14,12 +14,7 @@ rpm --import https://downloads.1password.com/linux/keys/1password.asc
 sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=\"https://downloads.1password.com/linux/keys/1password.asc\"" > /etc/yum.repos.d/1password.repo'
 mkdir -p /opt/1Password
 dnf5 install -y 1password
-
-### INSTALL Dropbox ####
-wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2025.05.20-1.fc42.x86_64.rpm -O /tmp/nautilus-dropbox.rpm
-dnf5 install -y /tmp/nautilus-dropbox.rpm
-rm -f /tmp/nautilus-dropbox.rpm
-
+### END INSTALL 1PASSWORD ####
 
 # Use a COPR Example:
 #
