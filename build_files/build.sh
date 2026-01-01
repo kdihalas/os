@@ -19,6 +19,10 @@ dnf5 install -y 1password
 dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
 
+
+### Remove Ptyxis ###
+dnf5 -y remove ptyxis
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
