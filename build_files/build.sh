@@ -19,6 +19,9 @@ dnf5 install -y 1password
 dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
 
+### INSTAL Development Libraries
+dnf5 -y  group install c-development development-tools
+
 
 ### Remove Ptyxis ###
 dnf5 -y remove ptyxis
