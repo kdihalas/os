@@ -231,6 +231,10 @@ _run-vm $target_image $tag $type $config:
     if [[ $type == iso ]]; then
         image_file="output/bootiso/install.iso"
     fi
+    
+    if [[ $type == raw ]]; then
+        image_file="output/image/disk.raw"
+    fi
 
     # Build the image if it does not exist
     if [[ ! -f "${image_file}" ]]; then
