@@ -14,7 +14,8 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
 
 ### INSTAL Development Libraries
-dnf5 -y  group install c-development development-tools llvm-devel clang
+dnf5 -y  group install c-development development-tools 
+dnf5 -y install llvm-devel clang
 
 
 ### Remove Ptyxis ###
